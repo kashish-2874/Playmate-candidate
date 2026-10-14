@@ -27,8 +27,8 @@ export default function ProfilePage() {
       <section className="card relative mb-6 overflow-hidden">
         <div className="h-24 bg-gradient-to-r from-brand-600 via-brand-500 to-teal-400 sm:h-28" aria-hidden />
         <div className="flex flex-col gap-4 px-5 pb-5 sm:flex-row sm:items-end sm:justify-between">
-          <div className="-mt-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:gap-4">
-            <Avatar name={user.name} colorClass={user.avatarColor} size="xl" className="ring-4 ring-white dark:ring-slate-900" />
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:gap-4">
+            <Avatar name={user.name} colorClass={user.avatarColor} size="xl" className="-mt-12 ring-4 ring-white dark:ring-slate-900" />
             <div>
               <h1 className="text-2xl font-extrabold tracking-tight">{user.name}</h1>
               <p className="muted flex flex-wrap items-center gap-x-3 text-sm">
@@ -64,7 +64,7 @@ export default function ProfilePage() {
         />
       </section>
 
-      <div className="grid gap-6 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <section className="card p-5" aria-labelledby="per-sport-heading">
           <div className="mb-5 flex items-baseline justify-between">
             <h2 id="per-sport-heading" className="font-bold">

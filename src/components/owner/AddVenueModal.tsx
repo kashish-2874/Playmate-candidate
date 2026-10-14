@@ -85,7 +85,7 @@ export function AddVenueModal({ open, onClose, onCreated }: AddVenueModalProps) 
         </>
       }
     >
-      <form id="add-venue-form" noValidate onSubmit={onSubmit} className="grid gap-4 sm:grid-cols-2">
+      <form id="add-venue-form" noValidate onSubmit={onSubmit} className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <FormField label="Venue name" required error={errors.name}>
           <input className="input" value={form.name} onChange={(e) => set('name', e.target.value)} placeholder="e.g. Goal Rush Arena" data-autofocus />
         </FormField>

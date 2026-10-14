@@ -68,7 +68,7 @@ export default function HomePage() {
               type="search"
               value={filters.query}
               onChange={(e) => update('query', e.target.value)}
-              placeholder="Search by venue or area, e.g. Koramangala"
+              placeholder="Search venue or area"
               className="input pl-10 pr-10"
               autoComplete="off"
             />
@@ -118,7 +118,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-[260px_1fr]">
         <aside className="hidden lg:block" aria-label="Filters">
           <div className="card sticky top-40 p-5">{panel}</div>
         </aside>
@@ -148,7 +148,7 @@ export default function HomePage() {
           </div>
 
           {loading ? (
-            <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3" role="status" aria-label="Loading venues">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3" role="status" aria-label="Loading venues">
               {Array.from({ length: 6 }, (_, i) => (
                 <VenueCardSkeleton key={i} />
               ))}
@@ -165,7 +165,7 @@ export default function HomePage() {
               action={<Button onClick={onReset}>Reset filters</Button>}
             />
           ) : (
-            <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
               {results.map((venue, i) => (
                 <VenueCard key={venue.id} venue={venue} index={i} />
               ))}

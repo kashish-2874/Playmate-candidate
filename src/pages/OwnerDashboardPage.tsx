@@ -121,7 +121,7 @@ export default function OwnerDashboardPage() {
         <StatCard label="Blocked slots" value={upcomingBlocked} icon={<Ban className="h-5 w-5" aria-hidden />} hint="Today onwards" />
       </section>
 
-      <div className="grid gap-6 lg:grid-cols-[300px_1fr]">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[300px_1fr]">
         <section className="card p-4 lg:self-start" aria-labelledby="venues-heading">
           <h2 id="venues-heading" className="mb-1 px-3 font-bold">
             Occupancy today

@@ -44,7 +44,7 @@ export function BookingCard({ booking, venue, variant, onCancel }: BookingCardPr
             </div>
           </div>
 
-          <dl className="grid gap-1.5 text-sm sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
+          <dl className="grid grid-cols-1 gap-1.5 text-sm sm:grid-cols-[auto_1fr_auto] sm:items-center sm:gap-4">
             <div className="flex items-center gap-2">
               <dt className="sr-only">Date</dt>
               <CalendarDays className="h-4 w-4 text-brand-600" aria-hidden />

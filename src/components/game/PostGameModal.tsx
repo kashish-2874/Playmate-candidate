@@ -150,7 +150,7 @@ export function PostGameModal({ open, onClose, initialBookingId }: PostGameModal
         </>
       }
     >
-      <form id="post-game-form" data-post-game noValidate onSubmit={onSubmit} className="grid gap-4 sm:grid-cols-2">
+      <form id="post-game-form" data-post-game noValidate onSubmit={onSubmit} className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div className="sm:col-span-2">
           <FormField
             label="Link one of your bookings (optional)"

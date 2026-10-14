@@ -173,7 +173,7 @@ export default function VenueDetailsPage() {
         </div>
       </header>
 
-      <div className="grid gap-8 lg:grid-cols-[1fr_340px]">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_340px]">
         <div className="min-w-0 space-y-8">
           <VenueGallery images={venue.images} name={venue.name} />
 

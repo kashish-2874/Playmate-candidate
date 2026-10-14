@@ -99,7 +99,7 @@ export default function PlayersPage() {
           }
         />
       ) : (
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {visibleGames.map((game, i) => {
             const venue = venues.find((v) => v.id === game.venueId);
             return venue ? <GameCard key={game.id} game={game} venue={venue} index={i} /> : null;
