@@ -2,7 +2,7 @@
 
 Book sports venues and find players near you. PlayMate is a frontend-only React app built as a hiring assessment. It has five player screens, a venue-owner dashboard, and realistic dummy data. Everything persists in `localStorage`.
 
-**Live demo:** _https://playmate-demo.vercel.app_ (placeholder — replace after deploying)
+**Live demo:**https://playmate-candidate.vercel.app/
 
 ![Home, desktop](docs/screenshots/desktop-home.png)
 
